@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #d4e5f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.weather-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  width: 450px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.weather-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day-time p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.day-time span {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.main-weather {
+  text-align: center;
+}
+
+.main-weather h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.real-feel {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.weather-icon {
+  font-size: 2.5rem;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.detail-box {
+  background: #ecf2f7;
+  padding: 10px 12px;
+  border-radius: 15px;
+  text-align: center;
+  width: 30%;
+}
+
+.detail-box p {
+  font-size: 0.8rem;
+  color: #555;
+  margin: 0;
+}
+
+.detail-box span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.inputBox input {
+  width: 80%;
+  padding: 10px;
+  border: 0;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+}
+.inputBox button {
+  background-color: gold;
+  padding: 8px 14px;
+  width: 140px;
+  border: 0;
+  border-radius: 5px;
+}

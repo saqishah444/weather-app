@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <div class="weather-card">
+        <div class="inputBox">
+            <input type="text" id="inputcity" class="form-control" placeholder="Write your city" />
+            <div class="d-flex">
+                <div> <button id="btn" class="btn btn-warning">Check Weather</button></div>
+                <div>
+                    <div class="spinner-border d-none" id="loader" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="weather-top">
+            <div class="day-time">
+                <p id="area">-</p>
+                <span id="region">-</span>, <span id="country">-</span>.
+            </div>
+            <div class="main-weather">
+                <h1 id="temperature">0</h1>
+                <p id="condition">-</p>
+            </div>
+            <div class="weather-icon">
+                <img id="weathericon" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" />
+
+            </div>
+        </div>
+
+        <div class="weather-details">
+            <div class="detail-box">
+                <p>Wind</p>
+                <span id="windspeed">0 </span>km/h
+            </div>
+            <div class="detail-box">
+                <p>Real Feel</p>
+                <span id="realfeel">0</span>°C
+            </div>
+            <div class="detail-box">
+                <p>Humidity</p>
+                <span id="humidity">0</span>%
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./function.js">
+    </script>
 </body>
+
 </html>
